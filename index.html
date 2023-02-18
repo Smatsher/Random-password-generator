@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Karla:wght@800&display=swap" rel="stylesheet">
+    <title>Password Generator</title>
+</head>
+<body>
+    <main id="main">
+        <h1><span class="first__text--color">Generate a</span>
+            <br>
+            random password</h1>
+        <p>Never use an insecure password again.</p>
+        <form action="#">
+            <br>
+            <br>
+            <label for="symbol">Symbol</label>
+            <input type="checkbox" name="addsymbol">
+            <br>
+            <br>
+            <label for="number">Number</label>
+            <input type="checkbox" name="addnumber">
+        </form>
+        <div class="btn__container">
+            <button class="btn first__text--color" onclick="generatePassword()">Generate Passwords</button>
+            <button class="btn first__text--color" onclick="resetPassword()">Reset Passwords</button>
+        </div>
+        <hr>
+        <div class="pass-container">
+            <p id="firstpass-el" class="para"></p> 
+            <p id="secondpass-el"class="para"></p>
+        </div>
+    </main>
+
+
+
+<script src="./scripts/script.js"></script>
+</body>
+</html>
